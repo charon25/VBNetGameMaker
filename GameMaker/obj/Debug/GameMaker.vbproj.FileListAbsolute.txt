@@ -1,0 +1,8 @@
+C:\Users\Charon\Documents\Visual Studio 2010\Projects\GameMaker\GameMaker\bin\Debug\GameMaker.dll
+C:\Users\Charon\Documents\Visual Studio 2010\Projects\GameMaker\GameMaker\bin\Debug\GameMaker.pdb
+C:\Users\Charon\Documents\Visual Studio 2010\Projects\GameMaker\GameMaker\bin\Debug\GameMaker.xml
+C:\Users\Charon\Documents\Visual Studio 2010\Projects\GameMaker\GameMaker\obj\Debug\GameMaker.Resources.resources
+C:\Users\Charon\Documents\Visual Studio 2010\Projects\GameMaker\GameMaker\obj\Debug\GameMaker.vbproj.GenerateResource.Cache
+C:\Users\Charon\Documents\Visual Studio 2010\Projects\GameMaker\GameMaker\obj\Debug\GameMaker.dll
+C:\Users\Charon\Documents\Visual Studio 2010\Projects\GameMaker\GameMaker\obj\Debug\GameMaker.xml
+C:\Users\Charon\Documents\Visual Studio 2010\Projects\GameMaker\GameMaker\obj\Debug\GameMaker.pdb

@@ -1,0 +1,238 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+GameMaker
+</name>
+</assembly>
+<members>
+<member name="M:GameMaker.SoundsManager.#ctor(System.String,System.String,System.Random@,System.String)">
+	<summary>
+ Initialise une nouvelle instance de la classe SoundsManager sans inclure directement les sons.
+ </summary>
+	<param name="soundFilesPath">Répertoire qui contiendra les fichiers sons.</param>
+	<param name="separator">Séparateur préfixe-numéro.</param>
+	<param name="rand">Instance de la classe System.Random pour permettre de jouer un son aléatoire.</param>
+	<param name="uuid">ID unique.</param>
+	<remarks></remarks>
+</member><member name="M:GameMaker.SoundsManager.#ctor(System.String,System.String,System.Random@,System.String,System.Resources.ResourceSet,System.String)">
+	<summary>
+ Initialise une nouvelle instance de la classe SoundsManager à l'aide d'une liste de ressources.
+ </summary>
+	<param name="soundFilesPath">Répertoire qui contiendra les fichiers sons.</param>
+	<param name="separator">Séparateur préfixe-numéro.</param>
+	<param name="rand">Instance de la classe System.Random pour permettre de jouer un son aléatoire.</param>
+	<param name="resourceSet">ResourceSet contenant, entre autres, les sons à ajouter.</param>
+	<param name="key">Chaîne par laquelle doivent commencer les noms de ressources pour qu'elles soient ajoutées.</param>
+	<param name="uuid">ID unique.</param>
+	<remarks></remarks>
+</member><member name="M:GameMaker.SoundsManager.AddSound(System.String,System.IO.UnmanagedMemoryStream)">
+	<summary>
+ Ajouter un son provenant d'une ressource.
+ </summary>
+	<param name="soundName">Nom de la ressource.</param>
+	<param name="sound">Ressource elle-même.</param>
+	<returns>Renvoie True si le son a bien été ajouté.</returns>
+	<remarks></remarks>
+</member><member name="M:GameMaker.SoundsManager.CloseAll">
+	<summary>
+ Arrête tous les sons en cours.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GameMaker.SoundsManager.CloseAllButSomeExceptions(System.String)">
+	<summary>
+ Arrête tous les sons en cours sauf ceux dont le nom contient un chaîne spécifique.
+ </summary>
+	<param name="exceptions">Chaîne à exclure de l'arrêt.</param>
+	<remarks></remarks>
+</member><member name="M:GameMaker.SoundsManager.PlaySound(System.String)">
+	<summary>
+ Joue un son au hasard parmi ceux partageant le préfixe envoyé en paramètre.
+ </summary>
+	<param name="soundPrefix">Préfixe à jouer.</param>
+	<remarks></remarks>
+</member><member name="T:GameMaker.SoundsManager">
+	<summary>
+ Représente un gestionnaire de son. Permet d'ajouter, de lire et d'arrêter différents sons.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GameMaker.Button.#ctor(System.Drawing.Rectangle,System.Action)">
+	<summary>
+ Initialise une instance de la classe Button avec le rectangle du bouton et la méthode à appeler en cas de clic.
+ </summary>
+	<param name="buttonRect">Rectangle représentant le bouton.</param>
+	<param name="action">Méthode (sans arguments) à appeler lors du clic.</param>
+	<remarks></remarks>
+</member><member name="M:GameMaker.Button.#ctor(System.Drawing.Point,System.Drawing.Size,System.Action)">
+	<summary>
+ Initialise une instance de la classe Button avec la position du coin supérieur gauche du bouton, sa taille et la méthode à appeler en cas de clic.
+ </summary>
+	<param name="cornerLocation">Coin supérieur gauche du bouton.</param>
+	<param name="size">Taille du bouton.</param>
+	<param name="action">Méthode (sans arguments) à appeler lors du clic.</param>
+	<remarks></remarks>
+</member><member name="M:GameMaker.Button.Click(System.Drawing.Point)">
+	<summary>
+ Appelle la méthode si les coordonnées sont à l'intérieur du bouton.
+ </summary>
+	<param name="mouseLocation">Position de la souris.</param>
+	<remarks></remarks>
+</member><member name="M:GameMaker.Button.IsClicking(System.Drawing.Point)">
+	<summary>
+ Indique si les coordonnées sont à l'intérieur du bouton.
+ </summary>
+	<param name="mouseLocation">Position de la souris.</param>
+	<returns>Renvoie True si la souris est sur le bouton, False sinon.</returns>
+	<remarks></remarks>
+</member><member name="M:GameMaker.Functions.Misc.SplitString(System.String,System.String)">
+	<summary>
+ Fonction étendant String.Split() permettant d'utiliser des chaînes comme séparation.
+ </summary>
+	<param name="text">Chaîne à découper.</param>
+	<param name="separator">Séparateur (peut contenir plusieurs caractères).</param>
+	<returns>Renvoie un System.Array de String contenant les morceaux de la chaîne.</returns>
+	<remarks></remarks>
+</member><member name="M:GameMaker.Functions.Misc.GetRandomElementOfList(System.Collections.Generic.IEnumerable{System.Object}@,System.Random)">
+	<summary>
+ Renvoie un élément au hasard d'une liste d'objets.
+ </summary>
+	<param name="list">Liste source.</param>
+	<param name="rand">Instance de la classe System.Random.</param>
+	<returns>Un élément au hasard de la liste source.</returns>
+	<remarks></remarks>
+</member><member name="T:GameMaker.Functions.Misc">
+	<summary>
+ Fonctions générales.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GameMaker.Functions.Images.SplitSprites1DWidth(System.Drawing.Bitmap,System.Int32)">
+	<summary>
+ Renvoi un Array de Bitmap consistant en un découpage vertical de l'image donnée selon la largeur spécifiée.
+ </summary>
+	<param name="spritesheet">Image contenant les sprites les uns à la suite des autres le ligne d'une seule ligne.</param>
+	<param name="spriteWidth">Largeur d'un sprite.</param>
+	<returns>System.Array contenant les sprites.</returns>
+	<remarks></remarks>
+</member><member name="M:GameMaker.Functions.Images.SplitSprites1DHeight(System.Drawing.Bitmap,System.Int32)">
+	<summary>
+ Renvoi un Array de Bitmap consistant en un découpage horizontal de l'image donnée selon la hauteur spécifiée.
+ </summary>
+	<param name="spritesheet">Image contenant les sprites les uns à la suite des autres le ligne d'une seule ligne.</param>
+	<param name="spriteHeight">Hauteur d'un sprite.</param>
+	<returns>System.Array contenant les sprites.</returns>
+	<remarks></remarks>
+</member><member name="M:GameMaker.Functions.Images.SplitSprites2D(System.Drawing.Bitmap,System.Int32,System.Int32)">
+	<summary>
+ Renvoie un Array de Bitmap consistant en un découpage dans les deux directions de l'image donnée selon la largeur et la hauteur spécifiées.
+ </summary>
+	<param name="spritesheet">Image contenant les sprites.</param>
+	<param name="spriteWidth">Largeur d'un sprite.</param>
+	<param name="spriteHeight">Hauteur d'un sprite.</param>
+	<returns>System.Array à deux dimensions contenant les sprites.</returns>
+	<remarks></remarks>
+</member><member name="T:GameMaker.Functions.Images">
+	<summary>
+ Fonctions concernant des actions graphiques.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GameMaker.Functions.Collision.RectangleRectangle(System.Drawing.Rectangle,System.Drawing.Rectangle)">
+	<summary>
+ Indique si deux rectangles se touchent ou non.
+ </summary>
+	<param name="rect1">Premier rectangle.</param>
+	<param name="rect2">Second rectangle.</param>
+	<returns>Renvoie True si les deux ont une intersection, False sinon.</returns>
+	<remarks></remarks>
+</member><member name="M:GameMaker.Functions.Collision.RectangleRectangle(System.Drawing.PointF,System.Drawing.Size,System.Drawing.PointF,System.Drawing.Size)">
+	<summary>
+ Indique si deux rectangles, donnés par leurs coins supérieurs gauches et tailles, se touchent ou non.
+ </summary>
+	<param name="corner1">Coin supérieur gauche du premier rectangle.</param>
+	<param name="size1">Taille du premier rectangle.</param>
+	<param name="corner2">Coin supérieur gauche du second rectangle.</param>
+	<param name="size2">Taille du second rectangle.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GameMaker.Functions.Collision.RectanglePoint(System.Drawing.Rectangle,System.Drawing.PointF)">
+	<summary>
+ Indique si un point est à l'intérieur d'un rectangle.
+ </summary>
+	<param name="rect">Rectangle considéré.</param>
+	<param name="p">Point.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GameMaker.Functions.Collision.RectanglePoint(System.Drawing.Point,System.Drawing.Size,System.Drawing.PointF)">
+	<summary>
+ Indique si un point est à l'intérieur d'un rectangle donné par son coin supérieur gauche et sa taille
+ </summary>
+	<param name="corner">Coin supérieur gauche du rectangle considéré.</param>
+	<param name="size">Taille du rectangle considéré.</param>
+	<param name="p">Point</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:GameMaker.Functions.Collision">
+	<summary>
+ Fonctions concernant des collisions.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:GameMaker.Functions">
+	<summary>
+ Contient des fonctions utiles.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GameMaker.Animator.#ctor(System.Drawing.Bitmap[],System.Int32)">
+	<summary>
+ Initialise une nouvelle instance de la classe Animator à l'aide d'un Array d'images et d'un cooldown.
+ </summary>
+	<param name="sprites">Array d'images constituant l'animation.</param>
+	<param name="cooldown">Nombre de ticks entre le changement d'image.</param>
+	<remarks></remarks>
+</member><member name="M:GameMaker.Animator.Age(System.Int32)">
+	<summary>
+ Fait progresser l'animation du nombre de ticks spécifié.
+ </summary>
+	<param name="tickCount">Nombre de ticks à faire passer (par défaut : 1).</param>
+	<remarks></remarks>
+</member><member name="M:GameMaker.Animator.Pause">
+	<summary>
+ Met l'animation en pause.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GameMaker.Animator.Unpause">
+	<summary>
+ Redémarre l'animation.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GameMaker.Animator.GetCurrentSprite">
+	<summary>
+ Renvoie la texture actuelle de l'animation.
+ </summary>
+	<returns>Texture de l'animation au temps actuel.</returns>
+	<remarks></remarks>
+</member><member name="M:GameMaker.Animator.IsPaused">
+	<summary>
+ Renvoie une valeur indiquant si l'animation est en pause ou non.
+ </summary>
+	<returns>True si l'animation est en pause, False sinon.</returns>
+	<remarks></remarks>
+</member><member name="T:GameMaker.Animator">
+	<summary>
+ Représente un gestionnaire d'animation qui permet d'automatiser la transition entre plusieurs sprites.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GameMaker.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:GameMaker.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:GameMaker.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>
